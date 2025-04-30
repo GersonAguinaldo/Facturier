@@ -16,6 +16,7 @@ export class Datas implements HasHtmlFormat {
     private date: Date,
   ) {}
 
+  //Fonction pour calculer avec la tva
   private subtotal(price: number, quantity: number, tva: number): number {
     const tvaPercent = tva / 100; //20% =0.2
     const totalTva = price * tvaPercent;
